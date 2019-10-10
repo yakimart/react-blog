@@ -1,0 +1,43 @@
+.main-title > .author-on-title{
+    letter-spacing: 1px;
+    margin: 0 auto;
+    width: 240px;
+    height: 160px;
+    margin-top: 80px;
+    position: relative;
+}   
+
+.main-title > .author-on-title > .author-name-on-title{
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: white;
+}
+
+.main-title > .author-on-title > .date-on-title{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color:#9b9b9b;
+}
+
+.likes-and-comments{
+    justify-content: space-around;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: bold;
+    
+}
+
+.likes-and-comments a{
+    color:#9b9b9b;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+
+}

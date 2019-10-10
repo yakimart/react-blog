@@ -1,0 +1,29 @@
+.icons{
+    flex:2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-button{
+    width: 45px;
+    height: 30px;
+    border-right: 1px solid #5c5b5b;    
+    background-size: contain;
+
+}
+
+
+.search{
+    background: url("./search.png") no-repeat;
+    background-position: top center;
+}
+
+.like{
+    background: url("./heart.png") no-repeat;
+    background-position: top center;
+}
+
+.cart{
+    background: url("./shopping_cart.png") no-repeat;
+    background-position: top center;
+}

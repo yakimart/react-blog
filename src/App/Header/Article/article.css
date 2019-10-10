@@ -1,0 +1,35 @@
+.topic{
+    text-transform: uppercase;
+    color: #bdbdbe;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.label{
+    text-transform: uppercase;
+    color: white;
+    font-family: Montserrat;
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    line-height: 50px;
+}
+
+.read-more{
+    padding: 14px 30px 14px 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #303F9F;
+    background-size: cover;
+    border-radius: 50px;
+    border-width: 0px;
+    box-shadow: 0 0 15px #303F9F;
+
+}
