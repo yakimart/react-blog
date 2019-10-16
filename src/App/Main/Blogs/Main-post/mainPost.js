@@ -6,7 +6,7 @@ class MainPost {
 
     render(){
         const {
-        // category,
+        category,
         title,
         photo,
         intro,
@@ -14,7 +14,7 @@ class MainPost {
         authorName,
         authorPhoto,
         date,
-        // postType,
+        postType,
         } = this.props
 
 

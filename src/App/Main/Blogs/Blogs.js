@@ -9,6 +9,8 @@ import blogPosts from './blogPosts/blogPosts'
 
 
 
+
+
         // category,
         // title,
         // photo,
@@ -23,18 +25,9 @@ import blogPosts from './blogPosts/blogPosts'
 const Blogs = () => {
 	return(
 		<div class="blogs">
-            <MainPost 
-                //  category = {blogPosts[0].category}
-                 title = {blogPosts[1].title}
-                 photo = {blogPosts[1].photo}
-                 intro ={blogPosts[1].intro}
-                //  content = {blogPosts[0].content}
-                 authorName = {blogPosts[1].authorName}
-                 authorPhoto = {blogPosts[1].authorPhoto}
-                 date = {blogPosts[1].date}
-                 />
+
             {
-            blogPosts.map(({
+            blogPosts.filter(blogPosts => blogPosts.postType == 'main').map(({
                 id,
                 category,
                 title,
@@ -44,13 +37,11 @@ const Blogs = () => {
                 authorName,
                 authorPhoto,
                 date,
-                postType,
             })=>{
-                if (postType == 'horizontal'){
                     return(
                             <div key={id}>
-                            <HorizontalPost
-                                // category = {category}
+                            <MainPost
+                                category = {category}
                                 title = {title}
                                 photo = {photo}
                                 intro = {intro}
@@ -59,18 +50,104 @@ const Blogs = () => {
                                 authorPhoto = {authorPhoto}
                                 date = {date}/>
                         </div>
-                )}
+                )
             })
         }
 
+
+
+{
+            blogPosts.filter(blogPosts => blogPosts.postType == 'main').map(({
+                id,
+                category,
+                title,
+                photo,
+                intro,
+                content,
+                authorName,
+                authorPhoto,
+                date,
+            })=>{
+                    return(
+                            <div key={id}>
+                            <HorizontalPost
+                                category = {category}
+                                title = {title}
+                                photo = {photo}
+                                intro = {intro}
+                                // content = {content}
+                                authorName = {authorName}
+                                authorPhoto = {authorPhoto}
+                                date = {date}/>
+                        </div>
+                )
+            })
+        }
+
+
+
 <div class="flex-row">
-    <TinyVerticalPost/>
-    <TinyVerticalPost/>
-    <TinyVerticalPost/>
+{
+            blogPosts.filter(blogPosts => blogPosts.postType == 'main').map(({
+                id,
+                category,
+                title,
+                photo,
+                intro,
+                content,
+                authorName,
+                authorPhoto,
+                date,
+            })=>{
+                    return(
+                            <div key={id}>
+                            <TinyVerticalPost
+                                category = {category}
+                                title = {title}
+                                photo = {photo}
+                                intro = {intro}
+                                // content = {content}
+                                authorName = {authorName}
+                                authorPhoto = {authorPhoto}
+                                date = {date}/>
+                        </div>
+                )
+            })
+        }
+
 </div>
+
+
+
 <div class="flex-row">
-    <VerticalPost/>     
-    <VerticalPost/>
+    {
+            blogPosts.filter(blogPosts => blogPosts.postType == 'main').map(({
+                            id,
+                            category,
+                            title,
+                            photo,
+                            intro,
+                            content,
+                            authorName,
+                            authorPhoto,
+                            date,
+                        })=>{
+                                return(
+                                        <div key={id}>
+                                        <VerticalPost
+                                            category = {category}
+                                            title = {title}
+                                            photo = {photo}
+                                            intro = {intro}
+                                            // content = {content}
+                                            authorName = {authorName}
+                                            authorPhoto = {authorPhoto}
+                                            date = {date}/>
+                                    </div>
+                            )
+                        })
+        }
+
 </div>
 
 </div>
