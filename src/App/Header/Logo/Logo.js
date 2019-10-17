@@ -6,7 +6,7 @@ import logo from './logo.png'
 const Logo = () =>{
 	return(
 			<div>
-				<img src={logo} alt=""/>>
+				<img src={logo} alt=""/>
 			</div>		
 	)
 }

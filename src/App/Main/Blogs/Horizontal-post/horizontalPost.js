@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 import './horizontal-post.css'
 
-class HorizontalPost {
+class HorizontalPost extends Component{
 
     render(){
         const {
@@ -25,14 +25,14 @@ class HorizontalPost {
         </div>
         <div>
             <div className="comment">
-                    <p className="title">{title}}</p>
+                    <p className="title">{title}</p>
                     <p>{intro}}</p>
             </div>
             <div class="author">
                     <div><img src={authorPhoto}/></div>
                     <div class="post-info">
                         <div className="author-name">{authorName}</div>
-                        <div className="date">{date}}</div>
+                        <div className="date">{date}</div>
                     </div>
                     <a href="" className="share"></a>
                 </div>

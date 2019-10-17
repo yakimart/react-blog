@@ -17,9 +17,9 @@
     border: none;
 }
 
-.menu a:hover, .icon-button:hover{
+/* .menu a:hover, .icon-button:hover{
     border-bottom: 4px solid #ff4081;
-}
+} */
 
 .arrow{
     margin-left: 10px;

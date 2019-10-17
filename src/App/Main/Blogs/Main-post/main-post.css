@@ -16,6 +16,16 @@
 .media > img{
     width: 100%;
     height: 100%;
+    position: relative;
+}
+
+.category{
+    color: white;
+    font-size: 16px;
+    font-family: Montserrat;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
 }
 
 .main-post > .media{

@@ -1,4 +1,4 @@
-.main-title > .author-on-title{
+.author-on-title{
     letter-spacing: 1px;
     margin: 0 auto;
     width: 240px;
@@ -6,8 +6,7 @@
     margin-top: 80px;
     position: relative;
 }   
-
-.main-title > .author-on-title > .author-name-on-title{
+.author-on-title > .author-name-on-title{
     margin-top: 20px;
     font-size: 14px;
     font-family: Montserrat;
@@ -15,7 +14,7 @@
     color: white;
 }
 
-.main-title > .author-on-title > .date-on-title{
+.author-on-title > .date-on-title{
     margin-top: 15px;
     margin-bottom: 20px;
     font-size: 12px;

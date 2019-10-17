@@ -62,4 +62,58 @@
     height: 160px;
     margin-top: 80px;
     position: relative;
+}   
+
+.main-title > .author-on-title > .author-name-on-title{
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: white;
 }
+
+.main-title > .author-on-title > .date-on-title{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color:#9b9b9b;
+}
+
+.likes-and-comments{
+    justify-content: space-around;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: bold;
+    
+}
+
+.start > nav{
+    flex: 8;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.menu a{
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    /* background-color: red; */
+    height: 100%;
+    border: none;
+    padding-bottom: 15px;
+}
+
+.menu a:hover, .icon-button:hover{
+    border-bottom: 4px solid #ff4081;
+}
+

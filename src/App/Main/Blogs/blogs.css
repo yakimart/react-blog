@@ -2,3 +2,15 @@
     position: relative;
     width: 820px;
 }
+
+.tiny-slider{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.vertical-slider{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}

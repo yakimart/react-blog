@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 import './sort.css'
 
@@ -10,11 +11,11 @@ const Sort = () => {
                 <p className="sort-blog">sort blog:</p>
                     <nav>
                         <ul className="sort-buttons">
-                            <li><a href="">All</a></li>
-                            <li><a href="">Photography</a></li>
-                            <li><a href="">lifestyle</a></li>
-                            <li><a href="">trip</a></li>
-                            <li><a href="">inspiration</a></li>
+                            <li><Link to = '/'>All</Link></li>
+                            <li><Link to = '/Photography'>Photography</Link></li>
+                            <li><Link to = '/Trip'>Trip</Link></li>
+                            <li><Link to = '/Lifestyle'>Lifestyle</Link></li>
+                            <li><Link to = '/Inspiration'>Inspiration</Link></li>
                         </ul>
                     </nav>
             </div>

@@ -69,9 +69,68 @@ const blogPosts = [
 
     
     },
+
+    {
+        id: 15,
+        category: "trip",
+        title: "Why It’s Amazing To Date People Who Love Traveling",
+        photo:"./images/Photo5.png",
+        intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        content:"",
+        authorName:"Martin Ipson",
+        authorPhoto:"./images/Author2.png",
+        date:"September 11, 2001 10:15",
+        postType:"horizontal"
+
+    
+    },
     
     {
         id: 6,
+        category: "inspiration",
+        title: "Food That Actually Taste Better When You Freeze",
+        photo:"./images/Photo6.png",
+        intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        content:"",
+        authorName:"Henry Ford",
+        authorPhoto:"./images/Author1.png",
+        date:"September 01, 2011 21:15",
+        postType:"tiny-vertical"
+
+    },
+
+    {
+        id: 26,
+        category: "inspiration",
+        title: "Food That Actually Taste Better When You Freeze",
+        photo:"./images/Photo6.png",
+        intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        content:"",
+        authorName:"Henry Ford",
+        authorPhoto:"./images/Author1.png",
+        date:"September 01, 2011 21:15",
+        postType:"tiny-vertical"
+
+    },
+
+    {
+        id: 56,
+        category: "inspiration",
+        title: "Food That Actually Taste Better When You Freeze",
+        photo:"./images/Photo6.png",
+        intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        content:"",
+        authorName:"Henry Ford",
+        authorPhoto:"./images/Author1.png",
+        date:"September 01, 2011 21:15",
+        postType:"tiny-vertical"
+
+    },
+
+    
+
+    {
+        id: 16,
         category: "inspiration",
         title: "Food That Actually Taste Better When You Freeze",
         photo:"./images/Photo6.png",
@@ -123,7 +182,34 @@ const blogPosts = [
         authorPhoto:"./images/Author2.png",
         date:"June 19, 2005 00:00",
         postType:"vertical"
-    }
+    },
+
+    {
+        id: 19,
+        category: "inspiration",
+        title: "Art Makes You Mentally Healthy",
+        photo:"./images/Photo9.png",
+        intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        content:"",
+        authorName:"Brenda Ticks",
+        authorPhoto:"./images/Author2.png",
+        date:"June 19, 2005 00:00",
+        postType:"vertical"
+    },
     
+    {
+        id: 59,
+        category: "inspiration",
+        title: "Art Makes You Mentally Healthy",
+        photo:"./images/Photo9.png",
+        intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        content:"",
+        authorName:"Brenda Ticks",
+        authorPhoto:"./images/Author2.png",
+        date:"June 19, 2005 00:00",
+        postType:"vertical"
+    },
     
     ]
+
+    export default blogPosts;
