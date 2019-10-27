@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom'
 
 import './main-post.css'
 
@@ -6,6 +7,7 @@ class MainPost extends Component{
 
     render(){
         const {
+        id,
         category,
         title,
         photo,
@@ -19,6 +21,7 @@ class MainPost extends Component{
 
 
 	return(
+        <Link to = {`/blog/${id}`}>
         <div className="post main-post">
         <div className="media">
             <img src={photo} alt="lifestyle"/>
@@ -37,6 +40,7 @@ class MainPost extends Component{
             <a href="" className="share"></a>
         </div>
     </div>
+    </Link>
 	)}
 }
 

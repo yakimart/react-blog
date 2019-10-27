@@ -18,8 +18,9 @@ const blogPosts = [
         category: "inspiration",
         title: "4 Natural Ways To Have Young Skin",
         photo:"./images/Photo2.png",
-        intro:'',
-        content:"",
+        intro:"",
+        content: "<div class='test'>text</div>",
+
         authorName:"Henry Jackson",
         authorPhoto:"./images/Author2.png",
         date:"April 28, 2016 10:50",
@@ -31,7 +32,7 @@ const blogPosts = [
         id: 3,
         category: "inspiration",
         title: "10 Things To Do To Change Your Life Forever",
-        authorPhoto:"./images/Author3.png",
+        photo:"./images/Photo3.png",
         intro:'Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ips',
         content:"",
         authorName:"Jackson Lopez",
@@ -73,8 +74,8 @@ const blogPosts = [
     {
         id: 15,
         category: "trip",
-        title: "Why It’s Amazing To Date People Who Love Traveling",
-        photo:"./images/Photo5.png",
+        title: "Black prickleback, tubeblenny North American darter escolar bleak.",
+        photo:"./images/Photo6.png",
         intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         content:"",
         authorName:"Martin Ipson",
@@ -89,7 +90,7 @@ const blogPosts = [
         id: 6,
         category: "inspiration",
         title: "Food That Actually Taste Better When You Freeze",
-        photo:"./images/Photo6.png",
+        photo:"./images/Photo7.png",
         intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         content:"",
         authorName:"Henry Ford",
@@ -102,8 +103,8 @@ const blogPosts = [
     {
         id: 26,
         category: "inspiration",
-        title: "Food That Actually Taste Better When You Freeze",
-        photo:"./images/Photo6.png",
+        title: "Four-eyed fish sandroller, yellowbanded perch: weeverfish grayling torpedo Blacksmelt",
+        photo:"./images/Photo8.png",
         intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         content:"",
         authorName:"Henry Ford",
@@ -116,8 +117,8 @@ const blogPosts = [
     {
         id: 56,
         category: "inspiration",
-        title: "Food That Actually Taste Better When You Freeze",
-        photo:"./images/Photo6.png",
+        title: "Taste Better When You Freeze",
+        photo:"./images/Photo9.png",
         intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         content:"",
         authorName:"Henry Ford",
@@ -132,8 +133,8 @@ const blogPosts = [
     {
         id: 16,
         category: "inspiration",
-        title: "Food That Actually Taste Better When You Freeze",
-        photo:"./images/Photo6.png",
+        title: "Food Freeze",
+        photo:"./images/Photo10.png",
         intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         content:"",
         authorName:"Henry Ford",
@@ -147,7 +148,7 @@ const blogPosts = [
         id: 7,
         category: "photography",
         title: "10 Tips for Noobs in Photo",
-        photo:"./images/Photo7.png",
+        photo:"./images/Photo11.png",
         intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         content:"",
         authorName:"Herbert Dom",
@@ -161,7 +162,7 @@ const blogPosts = [
         id: 8,
         category: "trip",
         title: "11 Fantastic To Spend Holidays",
-        photo:"./images/Photo8.png",
+        photo:"./images/Photo12.png",
         intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         content:"",
         authorName:"Max Carlson",
@@ -175,7 +176,7 @@ const blogPosts = [
         id: 9,
         category: "inspiration",
         title: "Art Makes You Mentally Healthy",
-        photo:"./images/Photo9.png",
+        photo:"./images/Photo13.png",
         intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         content:"",
         authorName:"Brenda Ticks",
@@ -187,8 +188,8 @@ const blogPosts = [
     {
         id: 19,
         category: "inspiration",
-        title: "Art Makes You Mentally Healthy",
-        photo:"./images/Photo9.png",
+        title: "Black swallower long-finned char tetra poolfish",
+        photo:"./images/Photo14.png",
         intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         content:"",
         authorName:"Brenda Ticks",
@@ -200,8 +201,8 @@ const blogPosts = [
     {
         id: 59,
         category: "inspiration",
-        title: "Art Makes You Mentally Healthy",
-        photo:"./images/Photo9.png",
+        title: "Make Your Mentally Healthy",
+        photo:"./images/Photo15.png",
         intro:'Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         content:"",
         authorName:"Brenda Ticks",
@@ -213,3 +214,10 @@ const blogPosts = [
     ]
 
     export default blogPosts;
+
+    export const getBlogById = (array) => (
+    array.reduce((accObj, blog) => ({
+    ...accObj, 
+    [blog.id]: blog,
+}), {})
+)

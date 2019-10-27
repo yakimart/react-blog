@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom'
 
 import './horizontal-post.css'
 
@@ -6,7 +7,8 @@ class HorizontalPost extends Component{
 
     render(){
         const {
-        // category,
+        id,
+        category,
         title,
         photo,
         intro,
@@ -19,9 +21,10 @@ class HorizontalPost extends Component{
 
 
 	return(
+        <Link to = {`/blog/${id}`}>
         <div className="post horizontal-post">
         <div className="media">
-            <img src={photo} alt="lifestyle"/>
+            <img src={photo} alt={category}/>
         </div>
         <div>
             <div className="comment">
@@ -38,6 +41,7 @@ class HorizontalPost extends Component{
                 </div>
         </div>
        </div>
+       </Link>
 	)
 }
 }

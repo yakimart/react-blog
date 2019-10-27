@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import './blogs.css'
 import AllBlogs from './AllBlogs'
 import HorizontalPost from './Horizontal-post/horizontalPost'
+import SinglePost from './SinglePost/SinglePost'
 import blogPosts from './blogPosts/blogPosts'
 
 
@@ -20,6 +21,7 @@ const Blogs = () => {
 
 
             <Route path='/' exact render={() => (<AllBlogs />)} />
+            <Route path='/blog/:blogId' component={SinglePost}/>
 
             <Route path='/Lifestyle' exact render={() => (
 
@@ -38,6 +40,7 @@ const Blogs = () => {
                     return (
                         <div key={id}>
                             <HorizontalPost
+                                id ={id}
                                 category={category}
                                 title={title}
                                 photo={photo}
@@ -69,6 +72,7 @@ const Blogs = () => {
                     return (
                         <div key={id}>
                             <HorizontalPost
+                                id ={id}
                                 category={category}
                                 title={title}
                                 photo={photo}
@@ -100,6 +104,7 @@ const Blogs = () => {
                     return (
                         <div key={id}>
                             <HorizontalPost
+                                id ={id}
                                 category={category}
                                 title={title}
                                 photo={photo}
@@ -131,6 +136,7 @@ const Blogs = () => {
                     return (
                         <div key={id}>
                             <HorizontalPost
+                                id ={id}
                                 category={category}
                                 title={title}
                                 photo={photo}

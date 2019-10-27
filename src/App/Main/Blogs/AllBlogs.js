@@ -56,6 +56,7 @@ const AllBlogs = () => {
                     return (
                         <div key={id}>
                             <MainPost
+                                id={id}
                                 category={category}
                                 title={title}
                                 photo={photo}
@@ -86,6 +87,7 @@ const AllBlogs = () => {
                     return (
                         <div key={id}>
                             <HorizontalPost
+                                 id={id}
                                 category={category}
                                 title={title}
                                 photo={photo}
@@ -118,6 +120,7 @@ const AllBlogs = () => {
                             return (
                                 <div key={id}>
                                     <TinyVerticalPost
+                                        id={id}
                                         category={category}
                                         title={title}
                                         photo={photo}
@@ -153,6 +156,7 @@ const AllBlogs = () => {
                             return (
                                 <div key={id}>
                                     <VerticalPost
+                                        id={id}
                                         category={category}
                                         title={title}
                                         photo={photo}

@@ -7,7 +7,10 @@
 .horizontal-post > .media{
     flex: 2.79;
     height: 100%;
+    overflow: hidden;
 }
+
+
 
 .horizontal-post > div{
     flex: 6;
