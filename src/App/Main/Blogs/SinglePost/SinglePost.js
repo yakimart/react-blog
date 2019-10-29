@@ -1,19 +1,19 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 
 import './singlePost.css'
 
 import blogPosts from '../blogPosts/blogPosts'
-import {getBlogById} from '../blogPosts/blogPosts'
+import { getBlogById } from '../blogPosts/blogPosts'
 
-class SinglePost extends Component{
+class SinglePost extends Component {
 
-    render(){
+    render() {
         const {
-        blogId,
+            blogId,
         } = this.props.match.params
 
-        const{
+        const {
             id,
             category,
             title,
@@ -26,14 +26,16 @@ class SinglePost extends Component{
         } = getBlogById(blogPosts)[blogId]
 
 
-	return(
-        <div>
-            <h1>{title}</h1>
-            <div>{content}</div>
-            
-        </div>
-	)
-}
+       
+
+        return (
+            <div>
+                <h1>{title}</h1>
+                <div className="content" dangerouslySetInnerHTML={{ __html: content }} />
+
+            </div>
+        )
+    }
 }
 
 export default SinglePost;

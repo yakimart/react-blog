@@ -31,7 +31,7 @@ class HorizontalPost extends Component{
                     <p className="title">{title}</p>
                     <p>{intro}}</p>
             </div>
-            <div class="author">
+            <div className="author">
                     <div><img src={authorPhoto}/></div>
                     <div class="post-info">
                         <div className="author-name">{authorName}</div>

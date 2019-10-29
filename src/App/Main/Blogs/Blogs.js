@@ -21,6 +21,7 @@ const Blogs = () => {
 
 
             <Route path='/' exact render={() => (<AllBlogs />)} />
+            
             <Route path='/blog/:blogId' component={SinglePost}/>
 
             <Route path='/Lifestyle' exact render={() => (
@@ -32,7 +33,6 @@ const Blogs = () => {
                     title,
                     photo,
                     intro,
-                    content,
                     authorName,
                     authorPhoto,
                     date,
@@ -45,7 +45,6 @@ const Blogs = () => {
                                 title={title}
                                 photo={photo}
                                 intro={intro}
-                                // content = {content}
                                 authorName={authorName}
                                 authorPhoto={authorPhoto}
                                 date={date} />
@@ -64,7 +63,6 @@ const Blogs = () => {
                     title,
                     photo,
                     intro,
-                    content,
                     authorName,
                     authorPhoto,
                     date,
@@ -77,7 +75,6 @@ const Blogs = () => {
                                 title={title}
                                 photo={photo}
                                 intro={intro}
-                                // content = {content}
                                 authorName={authorName}
                                 authorPhoto={authorPhoto}
                                 date={date} />
@@ -96,7 +93,6 @@ const Blogs = () => {
                     title,
                     photo,
                     intro,
-                    content,
                     authorName,
                     authorPhoto,
                     date,
@@ -109,7 +105,6 @@ const Blogs = () => {
                                 title={title}
                                 photo={photo}
                                 intro={intro}
-                                // content = {content}
                                 authorName={authorName}
                                 authorPhoto={authorPhoto}
                                 date={date} />
@@ -128,7 +123,6 @@ const Blogs = () => {
                     title,
                     photo,
                     intro,
-                    content,
                     authorName,
                     authorPhoto,
                     date,
@@ -141,7 +135,6 @@ const Blogs = () => {
                                 title={title}
                                 photo={photo}
                                 intro={intro}
-                                // content = {content}
                                 authorName={authorName}
                                 authorPhoto={authorPhoto}
                                 date={date} />

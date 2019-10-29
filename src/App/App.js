@@ -14,10 +14,23 @@ import Footer from './Footer/Footer.js'
 
 class App extends Component{
 
+	 updateData = (id, title, category, photo, date, authorName, authorPhoto) => {
+		this.setState({
+		id: {id},
+		title: { title },
+		category:{ category },
+		photo: {photo},
+		date: {date},
+		authorName: {authorName},
+		authorPhoto: {authorPhoto}
+	})
+	}
+
+
 	render(){
 	return(
 		<div>
-			<Header/>
+			<Header updateData = {this.updateData}/>
 			<Main/>
 			{/* <Footer/> */}
 		</div>
